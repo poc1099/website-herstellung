@@ -150,3 +150,28 @@ footer {
         font-size: 1.1rem;
     }
 }
+/* Textbox & Button volle Breite */
+input[type="text"],
+input[type="email"],
+textarea,
+button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Abstand und Lesbarkeit */
+.container {
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  input, textarea, button {
+    font-size: 1rem;
+  }
+}
