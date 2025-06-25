@@ -1,0 +1,152 @@
+/* Grundlayout */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Container für Seiteninhalte */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Überschriften */
+h1, h2 {
+    color: #0077ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Kontaktformular */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0077ff;
+    outline: none;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #0077ff, #00c2cb);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #005fcc, #00aab3);
+}
+
+/* Bild */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: #0077ff;
+    color: white;
+    padding: 16px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 119, 255, 0.3);
+    transition: background 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background: #005fcc;
+    transform: translateY(-2px);
+}
+
+/* Zentrierung */
+.center-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Mobiloptimierung */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, input, textarea, button {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 14px 24px;
+        font-size: 1.1rem;
+    }
+}
