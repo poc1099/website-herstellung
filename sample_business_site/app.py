@@ -13,7 +13,7 @@ def contact():
         name = request.form.get("name")
         email = request.form.get("email")
         message = request.form.get("message")
-        print(f"New message from {name} ({email}): {message}")
+        print(f"Neue Nachricht von {name} ({email}): {message}")
         return redirect(url_for("thank_you"))
     return render_template("contact.html")
 
